@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>javascript template</title>
+
+    <link href="songWebsite.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Script in <head> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous"></script>
+     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+     <script type="text/javascript" src="test.js"></script>
+
+</head>
+
+<body>
+  <nav
+    <ull>
+        <li><a href="#">home</a></li>
+        <li><a href="#photos">pics</a></li>
+        <li><a href="#videos">videos</a></li>
+    </ul>
+  </nav>
+
+  <h1 id="photos">Hello</h1>
+  <p> heenennvwnvivnwiovnw;ovnrvenr;ov</p>
+
+  <h1>Hello</h1>
+  <p> heenennvwnvivnwiovnw;ovnrvenr;ov</p>
+
+  <h1>Hello</h1>
+  <p> heenennvwnvivnwiovnw;ovnrvenr;ov</p>
+
+
+</body>
+
+</html>
