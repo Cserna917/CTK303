@@ -1,0 +1,36 @@
+.ball{
+  background-color: orange;
+  height: 100px;
+  width:  100px;
+  border-radius: 50%;
+  position: fixed;
+  top:550px;
+  left: 810px;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  10% {
+    height: 100px;
+    width: 100px
+  }
+  30%{
+    height: 50px;
+    width: 90px;
+
+  }
+  50% {
+    height: 45px;
+    width: 107px;
+    transform: translateY(280px);
+
+    //transform: translatex(200px);
+  }
+  75%{
+    height: 100px;
+    width: 107px;
+
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

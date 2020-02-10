@@ -1,0 +1,53 @@
+body{
+  padding: 0;
+  margin: 0;
+
+}
+.canvas{
+  background-color: red;
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+}
+.ball{
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top:450px;
+  left: 200px;
+  animation: bounce 0.s infinite;
+}
+@keyframes bounce {
+  10% {
+    height: 50px;
+    width: 50px
+  }
+  30%{
+    height: 50px;
+    width: 40px;
+
+  }
+  50% {
+    height: 30px;
+    width: 57px;
+    transform: translateY(440px);
+
+    //transform: translatex(200px);
+  }
+  75%{
+    height: 50px;
+    width: 57px;
+
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
