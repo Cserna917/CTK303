@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#mustache_1_{
+  animation: mustache 3s ease;
+}
+
+@keyframes mustache {
+  from{
+    transform: rotatez(0deg);
+
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+#eyes {
+  animation: eyes 3s ease;
+
+}
+
+@keyframes eyes {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+#outline_1_ {
+  animation: skull 2s ease;
+  transform-origin: center;
+}
+
+@keyframes skull {
+  from{
+    transform: translateY(-100%) ;
+
+  }
+  to{
+    transform: translateY(0%) ;
+  }
+}
+
+#nose {
+  animation: nose 3s ease;
+  transform-origin: center;
+}
+
+@keyframes nose {
+  from{
+    transform: translateY(100%);
+
+  }
+  to{
+    transform: translateY(0%) ;
+  }
+}
