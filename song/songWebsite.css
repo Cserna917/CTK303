@@ -1,59 +1,129 @@
 body{
-background-image: url("blackhole.jfif");
+background-color: grey;
 background-size: cover;
   color: white;
-
-}
-
-div.one {
-  background-color: orange;
-  border: 2px solid white;
-  width: 960px;
-  margin: auto;
-  padding: 10px;
-
-}
-
-ul {
-  list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+	padding: 1em;
+
 }
 
-li {
+
+
+nav{
   float: left;
+  display: grid;
+	grid-template-columns: 1fr 2fr;
+
+	grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+
+background-color: orange;
+ border: 2px solid black;
+ width: 960px;
+ margin: auto;
+ padding: 10px;
+
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+h1 {
+	color: black;
+	text-shadow: black 1px 1px 1px;
+	font-size: 3em;
+	margin: 0 0 .25em 0;
+	padding: 0;
+	border-bottom: 5px solid #ccc;
 }
-a:hover{
-  color: orange;
-}
-header{
-  background-color: black;
-
-  text-align: center;
-  color: white;
-}
-
 
 
 main{
-  text-align: center;
+color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#mainimg{
+	width: 100%;
+	margin-bottom: 5em;
 
 }
-div.two{
-  background-color: black;
-  border: 2px solid orange;
-  width: 960px;
-  margin: auto;
-  padding: 10px;
 
+
+@media all and (min-width: 30em){
+  h1 { color: blue; }
+	nav { grid-template-columns: repeat(4,1fr) }
+}
+
+@media all and (min-width: 50em){
+  h1 { color: orange; padding-bottom: .1em; }
+  #mainimg { width: 100%; float: right; }
+  nav { width: 30%; grid-template-columns: 1fr; }
+  nav a { margin-right: 1em; }
+  main { clear: both; grid-template-columns: repeat(3,1fr); grid-column-gap: 2em; }
+  body { max-width: 960px; margin: 0em auto; }
+}
+
+/* SVG */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#mustache_1_{
+  animation: mustache 3s ease;
+}
+
+@keyframes mustache {
+  from{
+    transform: rotatez(0deg);
+
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+#eyes {
+  animation: eyes 3s ease;
+
+}
+
+@keyframes eyes {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+#outline_1_ {
+  animation: skull 2s ease;
+  transform-origin: center;
+}
+
+@keyframes skull {
+  from{
+    transform: translateY(-100%) ;
+
+  }
+  to{
+    transform: translateY(0%) ;
+  }
+}
+
+#nose {
+  animation: nose 3s ease;
+  transform-origin: center;
+}
+
+@keyframes nose {
+  from{
+    transform: translateY(100%);
+
+  }
+  to{
+    transform: translateY(0%) ;
+  }
 }
